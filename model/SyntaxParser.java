@@ -12,8 +12,8 @@ public class SyntaxParser {
     private static final String PATRON_HOST = "([A-Za-z0-9_+-./:=?&%;]+)+";
     private static final String PATRON_PROTOCOLO = "([A-Za-z0-9_+-./:=?&%;]+)+";
     private static final String PATRON_GENERICO = ".+";
-    private static final String NOMBRE_CABEZA =  "[A-Za-z0-9_+-./=?&%;]+"; //"[A-Za-z_+-]+";
-    private static final String VALOR_CABEZA = "[A-Za-z0-9_+-./:=?&%;]+"; //"[A-Za-z0-9_+-./=?&%;]+";
+    private static final String NOMBRE_CABEZA =  "[A-Za-z0-9_+-./=?&%;]+";
+    private static final String VALOR_CABEZA = "[A-Za-z0-9_+-./:=?&%;]+";
     private static final String JSON = "\\{\\s*\"(\\w+)\":\\s*(\"[^\"]*\"|\\d+|\\{[^{}]*\\}|\\[[^\\[\\]]*\\])\\s*(,\\s*\"(\\w+)\":\\s*(\"[^\"]*\"|\\d+|\\{[^{}]*\\}|\\[[^\\[\\]]*\\])\\s*)*\\}";
     
     private String metodo;

@@ -11,8 +11,7 @@ public class User {
 
     public User(int id,String names, String email, String phone) {
         this.id = count.incrementAndGet();
-        //this.setId(id++);//sino se le asigna el id, el id siempre será el mismo
-        //User.id=id;//incrementamos el id automaticamente cada vez que se cree un nuevo usuario
+
         this.names = names;
         this.email = email;
         this.phone = phone;
@@ -53,12 +52,7 @@ public class User {
 
     @Override
     public String toString() {
-        /*return "{\n" +
-                "id=" + id + "\n" +
-                ", names='" + names + '\'' + "\n" +
-                ", email='" + email + '\'' + "\n" +
-                ", phone='" + phone + '\'' + "\n" +
-                "}" + "\n";*/
+
                 
         return "{\n\t\"id\":" + id + "," + "\n\t\"nombres\":" + names + "\"," + 
                     "\n\t\"email\":" + "\"" + email + "\",\n\t\"phone\":" + "\"" + phone + "\"\n\t\t\t\t\t\t},";
